@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+
+  .signup-form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ }
+
+.input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.signup-form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.signup-form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.signup-form .gender-box {
+  margin-top: 20px;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: brown;
+}
+
+.signup-form button:hover {
+  background: darksalmon;
+}
+
+
+
+.header-title {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header-one {
+  color: #333;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.invalid-field {
+  border-color: #dc3545;
+  color: #dc3545;
+  background-color: #fff;
+}
+
+.two-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.one-heading {
+  align-items: flex-start;
+  width: 600px;
+}
+
+.image-tag {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-upload {
+  display: flex;
+  align-items: center;
+}
+
+.error-text {
+  font-size: small;
+  color: red;
+}
+
+.signup-form {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  width: 606px;
+  padding: 40px;
+  transform: translate(-50%, -5%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+  background-color: lightgrey;
+  overflow: auto;
+}

@@ -1,0 +1,128 @@
+.sr-btn{
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.1rem;
+    font-weight: 650;
+ cursor: pointer;
+    padding: 0.5rem  2rem;
+    background-color: rgb(22, 87, 148);
+
+
+}
+.sr-btn:hover{
+    background-color: rgb(110, 171, 212);
+
+}
+
+
+.sr-outer-box{
+    border-radius: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
+    background-color: antiquewhite;
+  transition: 0.3s;
+   margin :auto;
+   text-align: center; 
+
+   width: fit-content;
+   height: fit-content;
+   margin-bottom: 5vh;
+   margin-top: 3vh;
+   display: flex;
+
+   align-items: center;
+  
+}
+.sr-detail{
+    display: flex;
+    column-gap: 3vh;
+    align-items: center;
+}
+.sr-row{
+    border-radius:1vh;
+    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
+    background-color: darkgrey;
+    margin-top: 2vh;
+    width: 13vw;
+   /* height:5vh; */
+   padding: 5px;
+   margin-bottom: 2vh;
+   margin-left: 3vh;
+   text-align: left;
+    
+ }
+
+
+ .sbc-outer-box{
+    border-radius: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
+    background-color: antiquewhite;
+  transition: 0.3s;
+   margin :auto;
+   text-align: center; 
+
+   width: fit-content;
+   height: fit-content;
+   margin-bottom: 5vh;
+   margin-top: 3vh;
+   display: flex;
+
+   align-items: center;
+ }
+ .sbc-details{
+    display: flex;
+    column-gap: 3vh;
+    align-items: center;
+    
+
+ }
+ .sbc-row{
+    border-radius:1vh;
+    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
+    background-color: darkgrey;
+    margin-top: 2vh;
+    width:fit-content;
+   
+    margin-right: 3vh;
+   height: fit-content;
+   margin-bottom: 3vh;
+   margin-left: 1vw;
+   text-align: justify;
+   text-align:center;
+ }
+
+ .sbc-icon{
+    font-size: 5vh;
+    display:flex;
+margin-left: 3vh;
+}
+.sr-title{
+    text-align: center;
+}
+    
+.sr-middile{
+    display: flex;
+    height: 77vh;
+    margin: 6rem;
+
+}
+ .sr-left-side{
+    display: flex;
+    position: relative;
+    flex:1;
+    flex-direction: column;
+ }
+
+.sr-left-data{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+
+
+ 
+ .sr-right-side{
+    flex:1;
+ }
