@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 3vh;
 }
+
 .th-filter {
     width: 30%;
     text-align: center;
@@ -42,8 +43,8 @@
   }
   .tp-outer-box{
     
-    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
-    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(17, 143, 122, 0.2);
+    background-color: rgb(234, 240, 239);
   transition: 0.3s;
   border-radius: 2vh;
   /* float: center; */
@@ -79,8 +80,8 @@ text-align: center;
   
 .th-row{
     border-radius:1vh;
-    box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
-    background-color: darkgrey;
+    box-shadow: 0 4px 8px 0 rgba(231, 229, 229, 0.2);
+    background-color: rgb(37, 141, 118);
     margin-top: 2vh;
     width: fit-content;
    padding: 0.5rem 1rem;
@@ -92,7 +93,19 @@ text-align: center;
 }
 
 
+.th-row1{
+  border-radius:1vh;
+  box-shadow: 0 4px 8px 0 rgba(230, 118, 118, 0.2);
+  background-color:rgb(37, 141, 118);
+  margin-top: 2vh;
+  width: fit-content;
+ padding: 0.5rem 0.5rem;
+ margin-bottom: 2vh;
+ margin-left: 3vh;
+ text-align: left;
 
+
+}
 
 
   .check-ride-btn{
@@ -109,7 +122,7 @@ text-align: center;
   border-radius: 40px;
   font-size: 1.1rem;
   font-weight: 650;
-  background-color: #be5e1d;
+  background: linear-gradient(135deg, #71b7e6, #93c47d);
   border: none;
   color: #FFFFFF;
   /* text-align: ; */
@@ -124,6 +137,8 @@ text-align: center;
  text-align: justify;
  text-align:center;
  vertical-align:middle;
+
+ 
   }
   .th-btn:hover {background-color: #978415}
 

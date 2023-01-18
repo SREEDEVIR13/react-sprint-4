@@ -22,7 +22,7 @@ useEffect(() => {
 
   function GetRideDetail() {
     axios
-      .get(`https://localhost:7149/api/HostRide/getDetailRide?Id=` + Id)
+      .get(`https://localhost:7149/api/HostRide/getInvitedUsers?Id=` + Id)
       .then((Response) => {
         setgetDetail(Response.data);
         console.log("details-get", Response.data);
@@ -41,24 +41,27 @@ useEffect(() => {
 
       {getDetail.map((data) => {
         return (
-          <div key={data.memberId} className="RowArrange">
+          <div key={data.InvitationId} className="RowArrange">
            
-           
+           <div className="card">
+               
+              <li key={data.InvitationId}></li>
+              <img
+                src={data.imageSrc}
+                className="card-img-top rounded-circle vehicle-image"
+              />
               <div className="card-body">
-                <h5>  {data.startLocation}</h5>
-              <div> {data.endLocation}</div> 
+                <h5>  {data.fullName}</h5>
+              <div> {data.status}</div> 
 
                 <br></br>
-                <div> {data.id}</div> 
-                <br></br>
-                <div> {data.numberOfSeats
-}</div> 
-                <br></br>
+                
                
 
 
                   
               </div>
+            </div>
             </div>
 
 );

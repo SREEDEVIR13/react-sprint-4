@@ -7,6 +7,9 @@ import * as Icon from 'react-bootstrap-icons';
 import { decodeToken } from "react-jwt";
 import axios from "axios";
 import {  useNavigate } from "react-router-dom";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 
 const Id = "SYT877";
 
@@ -16,7 +19,8 @@ export default function TripsHostedDetails() {
   const [isCheck, setIsCheck] = useState(false);
   const [CheckRide, setCheckRide] = useState([]);
 
-  
+  const [selectesDate, setSelectedDate]= useState('');
+  console.log( "get-date", selectesDate);
   useEffect(() => {
     HostedRidesList();
     // CheckRidesList();
@@ -43,6 +47,18 @@ export default function TripsHostedDetails() {
       });
      
   }
+// const handleSelect =(data)=>{
+
+// }
+
+
+
+
+  // const selectionRange = {
+  //   startDate: new Date(),
+  //   endDate: new Date(),
+  //   key: 'selection',
+  // };
   // function CheckRidesList() {
   //   axios
   //   .get(`https://localhost:7149/api/HostRide/getDetailRide?Id=` + Id)
@@ -71,6 +87,8 @@ export default function TripsHostedDetails() {
     Navigate(`/check-ride/${id}`);
   };
 
+
+  
   return (
     <>
       <Layout>
@@ -78,12 +96,26 @@ export default function TripsHostedDetails() {
           <div className="tp-title">
             <h2>Trips Hosted</h2>
           </div>
+          {/* <DateRangePicker
+        ranges={[selectionRange]}
+        onChange={handleSelect}
+      /> */}
           
 
           <div className="th-filter">
       
             <label>Filter By Date <Icon.Filter className="th-icon"/></label> 
-            <input className=" th-data" type="date" />
+            {/* <input className=" th-data" type="date" /> */}
+            <DatePicker selected={ selectesDate}
+            onChange={ date=>setSelectedDate(date)}
+            dateFormat="dd-MM-yyyy"
+            //minDate={ new Date()}
+            //maxDate={ new Date()}
+            //filterDate={ date=>date.getDay()!=6 && date.getDay()!=0}
+           // isClearable
+            showYearDropdown
+     
+            />     
           </div>
 {tripHosted.map((data) => { 
           return ( 
@@ -95,7 +127,7 @@ export default function TripsHostedDetails() {
                <div  className="th-row"><h5>To:  {data.endLocation}   <Icons.FaMapMarkerAlt/></h5></div> 
               </div>
               <div className="th-first">
-                <div className="th-row"> <h5>Date:{data. startDate}</h5><br></br></div>
+                <div className="th-row1"> <h5>Date:{data. startDate}</h5><br></br></div>
                 <div  className="th-row"><h5>StartTime: {data. startTime}</h5></div>
               </div>
               <div className="check-ride-btn">
